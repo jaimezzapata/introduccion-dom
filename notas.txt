@@ -7,3 +7,33 @@ https://leonardo.ai/
 
 
 Objetos: 
+Casi todas las etiquetas HTML tiene una propiedad textContent (menos los input), la cual permite acceder al texto que es visible para el usuario
+Para los input la propiedad que permite ver y manipular el contenido es la value
+Una estructura de datos que puede almacenar cualquier otro tipo de dato: Son una agrupación de un par de datos: (llave y valor)
+    Literales
+    Constructor
+
+El DOM es manipulado por medio de Eventos
+Eventos de usuario -> Toda acción que realiza un usuario dentro de la apliación: click, doble click, scroll, presionar una tecla, etc.
+Eventos de documento -> Toda acción que se realiza por debajo y no es visible para el usuario
+
+Los eventos son funciones o acciones que se pueden definir desde el html o desde el JavaScript, y siempre serán ejecutados por medio de funciones
+
+Funciones -> Bloque de código encapsulado que se puede llamar donde quiera y ejecutará una acción definida
+Toda función trabaja en dos tiempos: Su definición y su llamado o invocación
+
+    Funciones Regulares
+        Declarativas -> Se almacenan en el alcance global de la aplicación (hoisting)
+        De expresión
+    Funciones Flecha
+        De expresión
+    Funciones anónimas
+
+Eventos predeterminados
+    Mouse -> click, doble click, ingreso del mouse, salida del mouse, scroll
+        onclick, ondblclick, onmouseenter, onmouseout
+    Teclado -> 
+
+
+Módulos
+Importación y exportación de contenido entre archivos js

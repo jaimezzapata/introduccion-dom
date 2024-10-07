@@ -53,3 +53,15 @@ body {
     border: none;
     border-radius: 10px;
 }
+
+.otroFormulario{
+    width: 500px;
+    height: 500px;
+}
+
+.otroFormulario label {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}

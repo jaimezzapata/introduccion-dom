@@ -12,17 +12,20 @@
 
     <form class="form" action="">
         <div>
-            <label id="usuario" for="">Usuario</label>
-            <input type="text">
+            <label for="">Usuario</label>
+            <input id="usuario" type="text">
         </div>
         <div>
-            <label id="usuario" for="">Contraseña</label>
-            <input type="text">
+            <label for="">Contraseña</label>
+            <input id="contrasena" type="text">
         </div>
-        <button type="button">Iniciar Sesión</button>
+        <button onclick="iniciarSesion()" type="button">Iniciar Sesión</button>
+        <!-- <button ondblclick="iniciarSesion()" type="button">Iniciar Sesión</button>
+        <button onmouseenter="iniciarSesion()" type="button">Iniciar Sesión</button>
+        <button onmouseout="iniciarSesion()" type="button">Iniciar Sesión</button> -->
     </form>
 
-    <script src="./view/public/js/script.js"></script>
+    <script type="module" src="./view/public/js/script.js"></script>
     <script src="./view/public/js/validaciones.js"></script>
 </body>
 
