@@ -27,6 +27,7 @@ function iniciarSesion() {
         console.log('Bienvenido')
     } else {
         console.log('Error de credenciales')
+        console.log('Error de credenciales')
     }
 }
 
