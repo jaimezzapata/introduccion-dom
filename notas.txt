@@ -5,6 +5,22 @@ https://pixabay.com/es/
 https://iconos8.es/
 https://leonardo.ai/
 
+Métodos de los arreglos:
+    map() -> Iteración que manipula todo el arreglo el cual retornará un nuevo arreglo
+    filter() -> Iteración que filtra el contenido de un arreglo bajo una condición retornando un nuevo arreglo
+    find() -> Iteración que busca un único elemento dentro de un arreglo y retorna ese elemento
+    some() -> Iteración que busca un único elemento dentro de un arreglo y retorna true o false
+    push() -> Método que agrega un elemento a la ultima posición de un arreglo
+    pop() -> Método que elimina la ultima posición de un arreglo
+    shift() -> Método que elimina la primera posición de un arreglo
+    unshift() -> Método que agrega un elemento a la primera posición de un arreglo
+    splice() -> Método que elimina un elemento de una posición n del arreglo (n puede ser cualquier valor)
+    forEach() -> Lo mismo que el map pero sin retorno de arreglo
+
+    Métodos Mutables -> Modifica el arreglo original
+
+    Métodos no Mutables -> No modifica el arreglo original
+        map()
 
 Objetos: 
 Casi todas las etiquetas HTML tiene una propiedad textContent (menos los input), la cual permite acceder al texto que es visible para el usuario
@@ -27,13 +43,19 @@ Toda función trabaja en dos tiempos: Su definición y su llamado o invocación
         De expresión
     Funciones Flecha
         De expresión
-    Funciones anónimas
+    Funciones anónimas -> Es una función que no tiene nombre y se ejecuta solamente donde se definió
+
+    No retorno -> Ejecuta y muestra en la misma función (void)
+    Retorno -> Una ejecución que hace una función y que se podrá utilizar después
+
 
 Eventos predeterminados
     Mouse -> click, doble click, ingreso del mouse, salida del mouse, scroll
         onclick, ondblclick, onmouseenter, onmouseout
-    Teclado -> 
+    Teclado -> onChange
 
 
 Módulos
 Importación y exportación de contenido entre archivos js
+Cuando trabajamos con módulos (import/export) los eventos se programan por medio del escuchador de eventos: addEventListener
+

@@ -20,6 +20,12 @@ import { usuarios } from "../../../model/ModelUsuarios.js"
 
 console.log(usuarios)
 
+usuarios.map((index) => {
+    console.log(index)
+})
+
+document.querySelector('#btnIniciar').addEventListener('click', iniciarSesion)
+
 function iniciarSesion() {
     let usuario = document.querySelector('#usuario').value
     let contrasena = document.querySelector('#contrasena').value
@@ -27,9 +33,12 @@ function iniciarSesion() {
         console.log('Bienvenido')
     } else {
         console.log('Error de credenciales')
-        console.log('Error de credenciales')
     }
 }
+
+
+
+
 
 // let iniciarSesion = function () { /* Función de expresión */
 //     let usuario = document.querySelector('#usuario')
