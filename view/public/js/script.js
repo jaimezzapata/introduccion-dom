@@ -16,26 +16,16 @@ querySelector
 // console.log(document.querySelector("form"))
 // console.log(document.querySelectorAll("form"))
 
-import { usuarios } from "../../../model/ModelUsuarios.js"
-
-console.log(usuarios)
-
-usuarios.map((index) => {
-    console.log(index)
-})
+import { buscarUsuario } from "../../../controller/ControllerUsuarios.js"
 
 document.querySelector('#btnIniciar').addEventListener('click', iniciarSesion)
-
 function iniciarSesion() {
-    let usuario = document.querySelector('#usuario').value
-    let contrasena = document.querySelector('#contrasena').value
-    if (usuario == 'admin' && contrasena == '12345') {
-        console.log('Bienvenido')
+    if (buscarUsuario()) {
+        window.location.href = '/view/pages/home.html'
     } else {
         console.log('Error de credenciales')
     }
 }
-
 
 
 
