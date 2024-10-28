@@ -16,6 +16,7 @@ querySelector
 // console.log(document.querySelector("form"))
 // console.log(document.querySelectorAll("form"))
 import { buscarUsuario } from "../../../controller/ControllerUsuarios.js"
+import { listarRecetasNoVegetarianas, listarRecetasVegetarianas } from "../../../controller/ControllerRecetas.js"
 let btnIniciar = document.querySelector('#btnIniciar')
 if (btnIniciar) {
     btnIniciar.addEventListener('click', iniciarSesion)
@@ -28,11 +29,13 @@ if (btnIniciar) {
     }
 }
 document.getElementById('vegetarianas').addEventListener('click', () => {
-    document.getElementById('contenido').textContent = 'Recetas Vegetarianas'
+    listarRecetasVegetarianas()
 })
+
 document.getElementById('no-vegetarianas').addEventListener('click', () => {
-    document.getElementById('contenido').textContent = 'Recetas No vegetarianas'
+    listarRecetasNoVegetarianas()
 })
+
 document.getElementById('cerrar-sesion').addEventListener('click', () => {
     window.location.href = '/index.html'
 })

@@ -1,4 +1,4 @@
-const recetasVegetarianas = [
+export const recetasVegetarianas = [
     {
         nombre: "Ensalada de quinoa y aguacate",
         ingredientes: ["quinoa", "aguacate", "tomate", "pepino", "limón"],
@@ -140,7 +140,7 @@ const recetasVegetarianas = [
         tipoComida: "postre"
     }
 ];
-const recetasNoVegetarianas = [
+export const recetasNoVegetarianas = [
     {
         nombre: "Pollo al curry",
         ingredientes: ["pollo", "curry", "leche de coco", "cebolla", "ajo"],
