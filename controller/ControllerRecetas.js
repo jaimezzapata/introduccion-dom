@@ -39,21 +39,14 @@ export function listarRecetasNoVegetarianas() {
     })
 }
 
-function filtrarPorNombre() {
+export function filtrarPorNombre(value) {
+    let recetas = recetasVegetarianas.filter((recetaVegetariana) => recetaVegetariana.nombre == value)
+    console.log(recetas)
+}
+export function filtrarPorTipo() {
 
 }
-function filtrarPorTipo() {
+export function filtrarPorDificultad() {
 
 }
-function filtrarPorDificultad() {
 
-}
-export function filtroActivo() {
-    console.log('Filtro activo....')
-    let inputs = document.querySelectorAll('form input')
-    inputs.forEach((input) => {
-        input.addEventListener('onchange', () => {
-            console.log('Cambiando....')
-        })
-    })
-}

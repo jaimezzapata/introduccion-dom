@@ -16,7 +16,7 @@ querySelector
 // console.log(document.querySelector("form"))
 // console.log(document.querySelectorAll("form"))
 import { buscarUsuario } from "../../../controller/ControllerUsuarios.js"
-import { listarRecetasNoVegetarianas, listarRecetasVegetarianas, filtroActivo } from "../../../controller/ControllerRecetas.js"
+import { listarRecetasNoVegetarianas, listarRecetasVegetarianas, filtrarPorDificultad, filtrarPorTipo, filtrarPorNombre } from "../../../controller/ControllerRecetas.js"
 let btnIniciar = document.querySelector('#btnIniciar')
 if (btnIniciar) {
     btnIniciar.addEventListener('click', iniciarSesion)
@@ -46,13 +46,24 @@ if (cerrarSesion) {
         window.location.href = '/index.html'
     })
 }
-let btnFiltrar = document.getElementById('btnFiltrar')
-if (btnFiltrar) {
-    btnFiltrar.addEventListener('click', () => {
-        filtroActivo()
+
+let inputs = document.querySelectorAll('form input')
+inputs.forEach((input) => {
+    input.addEventListener('keyup', (e) => {
+        switch (e.target.name) {
+            case 'nombre':
+                filtrarPorNombre(e.target.value)
+                break;
+            case 'dificultad':
+                filtrarPorDificultad()
+                break;
+            case 'tipo':
+                filtrarPorTipo()
+                break;
+        }
+        console.log(e)
     })
-    // btnFiltrar.addEventListener('click', filtroActivo)
-}
+})
 
 
 
