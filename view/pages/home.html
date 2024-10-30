@@ -23,9 +23,12 @@
         <h1>Recetas</h1>
         <div>
             <nav>
-                <button>Filtrar por nombre</button>
-                <button>Filtrar por dificultad</button>
-                <button>Filtrar por tipo</button>
+                <form action="">
+                    <input placeholder="Nombre receta" id="nombre" type="text">
+                    <input placeholder="Dificultad receta" id="dificultad" type="text">
+                    <input placeholder="Tipo receta" id="tipo" type="text">
+                    <button type="button" id="btnFiltrar">Filtrar</button>
+                </form>
             </nav>
             <section class="cards" id="contenido">
 

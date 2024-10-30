@@ -38,3 +38,22 @@ export function listarRecetasNoVegetarianas() {
         document.getElementById('contenido').append(contendor)
     })
 }
+
+function filtrarPorNombre() {
+
+}
+function filtrarPorTipo() {
+
+}
+function filtrarPorDificultad() {
+
+}
+export function filtroActivo() {
+    console.log('Filtro activo....')
+    let inputs = document.querySelectorAll('form input')
+    inputs.forEach((input) => {
+        input.addEventListener('onchange', () => {
+            console.log('Cambiando....')
+        })
+    })
+}
