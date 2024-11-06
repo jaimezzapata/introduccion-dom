@@ -41,8 +41,28 @@ export function listarRecetasNoVegetarianas() {
 
 export function filtrarPorNombre(value) {
     let recetas = recetasVegetarianas.filter((recetaVegetariana) => recetaVegetariana.nombre == value)
-    console.log(recetas)
+    crearRecetasPorNombre(recetas)
 }
+function crearRecetasPorNombre(recetas) {
+    document.getElementById('contenido').innerHTML = ''
+    recetas.map((recetaVegetariana) => {
+        let contendor = document.createElement('div')
+        let nombre = document.createElement('p')
+        let ingredientes = document.createElement('ul')
+        let tiempo = document.createElement('p')
+        let dificultad = document.createElement('p')
+        let tipo = document.createElement('p')
+        nombre.textContent = 'Nombre: ' + recetaVegetariana.nombre
+        ingredientes.textContent = 'Ingredientes: ' + recetaVegetariana.ingredientes
+        console.log(recetaVegetariana.ingredientes)
+        tiempo.textContent = 'Tiempo preparación: ' + recetaVegetariana.tiempoPreparacion
+        dificultad.textContent = 'Dificultad: ' + recetaVegetariana.dificultad
+        tipo.textContent = 'Tipo: ' + recetaVegetariana.tipoComida
+        contendor.append(nombre, ingredientes, tiempo, dificultad, tipo)
+        document.getElementById('contenido').append(contendor)
+    })
+}
+
 export function filtrarPorTipo() {
 
 }
